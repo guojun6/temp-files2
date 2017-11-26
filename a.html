@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<title>2WEGA</title>
+	<style type="text/css" media="screen">
+		html, body {
+			padding: 0;
+			margin: 0;
+			font-size: 16px;
+			color: #232323;
+			height: 100%;
+		}
+		body {
+			/*width: 100%;*/
+			overflow-x: hidden;
+		}
+		img {
+			width: 72%;
+		}
+		@-webkit-keyframes goup {
+			from {
+				opacity: 0;
+				-webkit-transform: translate3d(0,100%,0);
+				   -moz-transform: translate3d(0,100%,0);
+				    -ms-transform: translate3d(0,100%,0);
+				     -o-transform: translate3d(0,100%,0);
+				        transform: translate3d(0,100%,0);
+			}
+			to {
+				opacity: 1;
+				-webkit-transform: translate3d(0,0,0);
+				   -moz-transform: translate3d(0,0,0);
+				    -ms-transform: translate3d(0,0,0);
+				     -o-transform: translate3d(0,0,0);
+				        transform: translate3d(0,0,0);
+			}
+		}
+		@keyframes goup {
+			from {
+				opacity: 0;
+				-webkit-transform: translate3d(0,100%,0);
+				   -moz-transform: translate3d(0,100%,0);
+				    -ms-transform: translate3d(0,100%,0);
+				     -o-transform: translate3d(0,100%,0);
+				        transform: translate3d(0,100%,0);
+			}
+			to {
+				opacity: 1;
+				-webkit-transform: translate3d(0,0,0);
+				   -moz-transform: translate3d(0,0,0);
+				    -ms-transform: translate3d(0,0,0);
+				     -o-transform: translate3d(0,0,0);
+				        transform: translate3d(0,0,0);
+			}
+		}
+		.goup {
+			-webkit-animation-name: goup;
+			animation-name: goup;
+		}
+		#container {
+			padding: 0 20px;
+			/*width: 100%;*/
+			height: 100%;
+			overflow: scroll;
+		}
+		.section:first-child {
+			padding-top: 20px;
+		}
+		.section {
+			padding-bottom: 16px;
+			opacity: 0;
+			text-align: center;
+			-webkit-animation-duration: 1s;
+			animation-duration: 1s;
+			-webkit-animation-timing-function: ease;
+			animation-timing-function: ease;
+			animation-fill-mode: both;
+
+			-webkit-transition: all 0.8s ease;
+			   -moz-transition: all 0.8s ease;
+			    -ms-transition: all 0.8s ease;
+			     -o-transition: all 0.8s ease;
+			        transition: all 0.8s ease;
+		}
+		.section.show {
+			opacity: 1;
+		}
+		.line {
+			opacity: 0;
+			-webkit-animation-duration: 1s;
+			animation-duration: 1s;
+			-webkit-animation-timing-function: ease;
+			animation-timing-function: ease;
+			animation-fill-mode: both;
+		}
+		#barrier {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			font-size: 20px;
+			background: #FFC0CB;
+			color: #fff;
+			z-index: 100;
+			text-align: center;
+		}
+		#barrier > p:first-child {
+			margin-top: 60px;
+		}#barrier > p:last-child {
+			margin-top: 12px;
+		}
+	</style>
+</head>
+<body>
+	<div id="barrier">
+		<p>嘻嘻</p>
+		<p>稍等一下下</p>
+	</div>
+	<div id="container">
+		<div class="section" id="p1">有事！谁说没事！</div>
+		<div class="section" id="p2">林慧嘉 我喜欢你</div>
+		<div class="section" id="p3">
+			<div class="line">像我这样的人</div>
+			<div class="line">爱玩 也爱学习</div>
+			<div class="line">喜欢独处 也喜欢和一帮人一起玩</div>
+			<div class="line">但是结交新朋友时感觉都是只有全新的自己</div>
+			<div class="line">可是面对你 我会想把自己之前的事像讲故事那样告诉你</div>
+		</div>
+		<div class="section" id="p4">
+			<img id="talkP" src="talk.jpg">
+		</div>
+		<div class="section" id="p5">
+			<div class="line">昨天晚上白云山上哼着歌的时候</div>
+			<div class="line">到《成都》想和你去成都的街头走一走</div>
+			<div class="line">到《轻轻的放下》想和你去大理</div>
+			<div class="line">还有哈尔滨的大雪</div>
+			<div class="line">呼伦贝尔大草原</div>
+			<div class="line">北京长城</div>
+		</div>
+		<div class="section" id="p6">
+			<div class="line">不知道你知道不知道阿狸的一个小故事</div>
+			<div class="line">阿狸打电话给桃子的</div>
+		</div>
+		<div class="section" id="p7">
+			<div class="line">"随便" "你决定"我也知道这些话很蠢</div>
+			<div class="line">可是</div>
+			<div class="line">其实我心里是有个偏向的</div>
+			<div class="line">只是</div>
+		</div>
+		<div class="section" id="p8">
+			<img src="weibo_sb.jpg">
+		</div>
+		<div class="section" id="p9">
+			<div class="">我不管了 我豁出去的了 我不要脸了</div>
+		</div>
+		<div class="section" id="p10">
+			<div class="">你可以做我的女朋友么？</div>
+		</div>
+		<div class="section" id="p11">
+			<div class="">果然用自己熟悉的语言舒服 我说完了。</div>
+		</div>
+		<div class="section" id="p12">
+			<img class="" src="weibo_mistake.jpg" >
+		</div>
+	</div>
+	
+	
+	<script type="text/javascript">
+		var section = document.querySelectorAll('.section');
+		console.log(section.length)
+		var anoterTime = 1000;
+		setTimeout(function() {
+			document.body.removeChild(document.getElementById('barrier'));
+			setTimeout(function() {
+				gorun();
+			}, 400);
+			
+		}, 3500);
+
+		function gorun() {
+			setTimeout(function() {
+				section[0].classList.add('goup');
+			}, 1000);
+			setTimeout(function() {
+				section[1].classList.add('goup');
+				section[2].classList.add('goup');
+			}, 3000);
+			setTimeout(function() {
+				section[2].children[0].classList.add('goup');
+			}, 4000+anoterTime);
+			setTimeout(function() {
+				section[2].children[1].classList.add('goup');
+			}, 4500+anoterTime*2);
+			setTimeout(function() {
+				section[2].children[2].classList.add('goup');
+			}, 5000+anoterTime*3);
+			setTimeout(function() {
+				section[2].children[3].classList.add('goup');
+			}, 5500+anoterTime*4);
+			setTimeout(function() {
+				section[2].children[4].classList.add('goup');
+			}, 7500+anoterTime*5);
+			setTimeout(function() {
+				section[3].classList.add('show');
+				section[4].classList.add('goup');
+			}, 8500+anoterTime*6);
+			setTimeout(function() {
+				section[4].children[0].classList.add('goup');
+			}, 10500+anoterTime*10);
+			setTimeout(function() {
+				section[4].children[1].classList.add('goup');
+			}, 12000+anoterTime*8+anoterTime*3);
+			setTimeout(function() {
+				section[4].children[2].classList.add('goup');
+			}, 13500+anoterTime*9+anoterTime*3);
+			setTimeout(function() {
+				section[4].children[3].classList.add('goup');
+			}, 15000+anoterTime*10+anoterTime*3);
+			setTimeout(function() {
+				section[4].children[4].classList.add('goup');
+			}, 16500+anoterTime*11+anoterTime*3);
+			setTimeout(function() {
+				section[4].children[5].classList.add('goup');
+			}, 18000+anoterTime*12+anoterTime*3);
+			setTimeout(function() {
+				section[5].classList.add('goup');
+			}, 18000+anoterTime*13+anoterTime*3);
+			setTimeout(function() {
+				section[5].children[0].classList.add('goup');
+			}, 20000+anoterTime*14+anoterTime*3);
+			setTimeout(function() {
+				section[5].children[1].classList.add('goup');
+			}, 21500+anoterTime*15+anoterTime*3);
+			setTimeout(function() {
+				section[6].classList.add('goup');
+			}, 21500+anoterTime*16+anoterTime*3);
+			setTimeout(function() {
+				section[6].children[0].classList.add('goup');
+			}, 24500+anoterTime*17+anoterTime*3);
+			setTimeout(function() {
+				section[6].children[1].classList.add('goup');
+			}, 26000+anoterTime*18+anoterTime*3);
+			setTimeout(function() {
+				section[6].children[2].classList.add('goup');
+			}, 27500+anoterTime*19+anoterTime*3);
+			setTimeout(function() {
+				section[6].children[3].classList.add('goup');
+			}, 29000+anoterTime*20+anoterTime*3);
+			setTimeout(function() {
+				section[7].classList.add('goup');
+			}, 32500+anoterTime*21+anoterTime*3);
+			setTimeout(function() {
+				section[8].classList.add('goup');
+			}, 36000+anoterTime*22+anoterTime*3);
+			setTimeout(function() {
+				section[9].classList.add('show');
+			}, 42000+anoterTime*23+anoterTime*3);
+			setTimeout(function() {
+				section[10].classList.add('show');
+			}, 50000+anoterTime*24+anoterTime*3);
+			setTimeout(function() {
+				section[11].classList.add('show');
+			}, 166000+anoterTime*25+anoterTime*3);
+		}
+	</script>
+</body>
+</html>
