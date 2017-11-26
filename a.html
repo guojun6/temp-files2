@@ -145,6 +145,7 @@
 		<div class="section" id="p6">
 			<div class="line">不知道你知道不知道阿狸的一个小故事</div>
 			<div class="line">阿狸打电话给桃子的</div>
+			<div class="line">……</div>
 		</div>
 		<div class="section" id="p7">
 			<div class="line">"随便" "你决定"我也知道这些话很蠢</div>
@@ -164,6 +165,7 @@
 		<div class="section" id="p11">
 			<div class="">果然用自己熟悉的语言舒服 我说完了。</div>
 		</div>
+		<div class="section">（请看第二行）</div>
 		<div class="section" id="p12">
 			<img src="./beer.jpg" alt="">
 		</div>
@@ -190,7 +192,7 @@
 				section[0].classList.add('goup');
 			}, 1000);
 			setTimeout(function() {
-				section[1].classList.add('goup');
+				//section[1].classList.add('goup');
 				section[2].classList.add('goup');
 			}, 3000);
 			setTimeout(function() {
@@ -238,6 +240,9 @@
 			}, 20000+anoterTime*14+anoterTime*9);
 			setTimeout(function() {
 				section[5].children[1].classList.add('goup');
+				setTimeout(function() {
+					section[5].children[2].classList.add('goup');
+				}, 1000);
 			}, 21500+anoterTime*15+anoterTime*9);
 			setTimeout(function() {
 				section[6].classList.add('goup');
@@ -269,6 +274,10 @@
 			// setTimeout(function() {
 			// 	section[11].classList.add('show');
 			// }, 53000+anoterTime*25+anoterTime*9);
+			setTimeout(function() {
+				section[1].classList.add('goup');
+			}, 51000+anoterTime*25+anoterTime*9);
+			
 			setTimeout(function() {
 				section[11].classList.add('show');
 				section[12].classList.add('show');
